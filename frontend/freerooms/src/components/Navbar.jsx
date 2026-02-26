@@ -1,12 +1,11 @@
 import "../styles/Navbar.css";
-import freeroomLogo from '../assets/freeRoomsLogo.png';
 import IconButton from "./IconButton.jsx";
 
 function Navbar() {
   return (
     <header className="header">
         <div className="logo">
-            <img src={freeroomLogo} alt="FreeRoom Logo" className="logo-image" />
+            <img src="/assets/freeRoomsLogo.png" alt="FreeRoom Logo" className="logo-image" />
             <span className="logo-text">Freerooms</span>
         </div>
         <div className="navigation">
