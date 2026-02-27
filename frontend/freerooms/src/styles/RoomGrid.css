@@ -17,6 +17,7 @@
   height: 20rem;
   object-fit: cover;
   display: block;
+  cursor: pointer;
 }
 
 .room-tile__badge {
@@ -53,4 +54,17 @@
   padding: 10px 12px;
   font-weight: 700;
   border-radius: 10px;
+}
+
+.room-tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(249, 115, 22, 0);
+  transition: background 0.3s ease;
+  pointer-events: none;
+}
+
+.room-tile:hover::after {
+  background: rgba(249, 115, 22, 0.35);
 }
