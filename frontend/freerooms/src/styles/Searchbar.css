@@ -25,6 +25,7 @@ body {
   border-radius: 6px;
   color: #ff6b35;
   font-weight: 550;
+  font-size: 1.25rem;
   cursor: pointer;
   transition: background 0.2s ease;
 }
@@ -86,6 +87,11 @@ body {
   border-color: #ff6b35;
 }
 
-.search-input::placeholder {
-  color: #999;
+.search-container > .dropdown-container:last-of-type .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+.search-input:hover:not(:focus) {
+  border-color: #141111;
 }
