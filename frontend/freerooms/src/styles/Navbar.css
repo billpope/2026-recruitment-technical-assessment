@@ -11,6 +11,9 @@
 }
 
 .logo {
+  border: none;
+  background: transparent;
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -18,7 +21,6 @@
 }
 
 .logo:hover{
-  cursor: pointer;
   opacity: 0.7;
 }
 

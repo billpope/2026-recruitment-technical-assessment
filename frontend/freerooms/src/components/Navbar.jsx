@@ -1,13 +1,25 @@
 import "../styles/Navbar.css";
 import IconButton from "./IconButton.jsx";
+import { useState } from "react";
 
 function Navbar() {
+  const [isDoorOpen, setIsDoorOpen] = useState(false);
+
+  const logoSrc = isDoorOpen ? "/assets/freeroomsDoorClosed.png" : "/assets/freeRoomsLogo.png";
+
+  const toggleDoor = () => {
+    setIsDoorOpen((prev) => !prev);
+  };
+
   return (
     <header className="header">
-        <div className="logo">
-            <img src="/assets/freeRoomsLogo.png" alt="FreeRoom Logo" className="logo-image" />
+        <button className="logo"
+          type = "button"
+          onClick={toggleDoor}
+        >
+            <img src={logoSrc} alt="FreeRoom Logo" className="logo-image" />
             <span className="logo-text">Freerooms</span>
-        </div>
+        </button>
         <div className="navigation">
             <IconButton icon="search" title="Search" onClick={() => console.log('Search')} />
             <IconButton icon="grid_view" title="Grid View" onClick={() => console.log('Grid View')} />    
