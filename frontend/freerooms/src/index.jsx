@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import RoomGrid from './components/RoomGrid.jsx'
 import Navbar from './components/Navbar.jsx'
 import Searchbar from './components/Searchbar.jsx'
